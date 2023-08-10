@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: white;
+}
+/* navbar */
+.navbar {
+  background-color: #3c99c7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 10px 10px white;
+}
+.navbar .logo {
+  font-size: 50px;
+  font-weight: 700;
+  margin-left: 75px;
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .menu {
+  display: flex;
+  align-items: center;
+}
+.menu a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  margin: 0 75px;
+}
+.menu a:hover {
+  color: cyan;
+}
+.menu a:active {
+  transform: scale(0.9);
+}
+
+/* home */
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: auto;
+  padding-top: 100px;
+}
+.home img {
+  width: 60vw;
+  height: 80vh;
+  margin: 25px 0;
+}
+.home .teks {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: right;
+}
+.teks .judul {
+  font-size: 70px;
+  font-weight: 400;
+  letter-spacing: 7px;
+  box-sizing: border-box;
+}
+.teks .judul span {
+  color: #3c99c7;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+.teks .ket {
+  font-size: 25px;
+  text-align: right;
+  color: rgb(42, 42, 42);
+  margin: 70px 0;
+  width: 500px;
+  margin-left: 100px;
+  padding-right: 8px;
+}
+.teks .tombol {
+  background-color: #3c99c7;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  display: block;
+  width: 250px;
+  margin-left: 350px;
+  box-sizing: border-box;
+}
+.teks .tombol:hover {
+  background-color: #0284c5;
+}
+.teks .tombol:active {
+  transform: scale(0.9);
+}
+.teks .sosmed {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  width: 250px;
+  margin-left: 350px;
+}
+.sosmed img {
+  width: 50px;
+  height: 50px;
+}
+.sosmed a {
+  transition: 0.5s;
+}
+.sosmed a:hover {
+  transform: rotate(360deg);
+}
+
+/* about */
+.aboutUS {
+  background-color: #3c99c7;
+  margin-top: -50px;
+  padding-top: 100px;
+}
+.au {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  margin: 0 75px;
+}
+.au1,
+.au2 {
+  width: 800px;
+}
+.au p {
+  font-size: 22px;
+  color: white;
+  text-align: justify;
+}
+.au h1 {
+  font-size: 40px;
+  color: white;
+}
+.au3 {
+  border: 5px dotted white;
+  padding-bottom: 70px;
+  padding-top: 30px;
+  margin: 0 75px;
+  margin-top: 50px;
+}
+.au3 h1 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+.au3 p {
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  margin: auto;
+}
+
+/* galery */
+.glr {
+  margin-top: -300px;
+  padding-top: 100px;
+}
+.glr h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.glr .gambar {
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid lightgray;
+}
+.glr .gambar img {
+  width: 320px;
+  height: 480px;
+}
+.g {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.glr .teks {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 20px;
+}
+.glr .gambar:hover {
+  border: 1px solid black;
+}
+.g2 {
+  text-align: center;
+  margin-top: 50px;
+}
+.g2 img {
+  margin: 0 25px;
+}
+.g2 img:hover {
+  box-shadow: 0px 0px 20px black;
+}
+.glr .overlay {
+  width: 0;
+  height: 0;
+  transition: 0.5s;
+  position: fixed;
+  top: -100px;
+}
+.glr .overlay:target {
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  text-align: center;
+  padding-top: 200px;
+}
+.overlay .close {
+  background-color: rgb(65, 64, 64);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 100px 0;
+  scale: 0;
+}
+.glr .overlay:target .close {
+  scale: 1;
+}
+.overlay img {
+  scale: 0;
+}
+.glr .overlay:target img {
+  scale: 1;
+}
+.glr button {
+  background-color: #3c99c7;
+  border: none;
+  border-radius: 50px;
+  width: 50%;
+  padding: 10px 0;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  transition: 0.15s;
+}
+.glr button a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+.glr button:hover {
+  background-color: #0284c5;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px black;
+}
+
+/* footer */
+.foter {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: -100px;
+  padding: 25px 0;
+  background-color: #3c99c7;
+  font-weight: bold;
+  color: white;
+}
